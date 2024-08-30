@@ -11,7 +11,7 @@ async function main() {
     const contract: any = await factory.deploy();
     await contract.waitForDeployment();
     console.log("Contract address:", contract.target);
-    // const contract = new Contract("0x6ca79644c3282015a1341afa8153aed950b71621", metadata.abi, signer);
+    // const contract = new Contract("0x6cA79644C3282015a1341AFA8153AeD950b71621", metadata.abi, signer);
     const message = "Hello World";
     const hashMsg = hashMessage(message);
     console.log("Hashed message:", hashMsg);
