@@ -19,7 +19,7 @@ contract EccContract {
     function recover(
         bytes32 hash,
         bytes memory signature
-    ) pure external returns (address) {
+    ) external pure returns (address) {
         return ECDSA.recover(hash, signature);
     }
 }
